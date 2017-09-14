@@ -10,6 +10,16 @@
 		<managed-bean-class>com.tutorial.LoginBean</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>connectDB</managed-bean-name>
+		<managed-bean-class>com.tutorial.ConnectDB</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>flagBean</managed-bean-name>
+		<managed-bean-class>com.tutorial.FlagBean</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
 	<navigation-rule>
 		<display-name>login.xhtml</display-name>
 		<from-view-id>/login.xhtml</from-view-id>

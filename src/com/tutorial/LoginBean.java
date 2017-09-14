@@ -5,13 +5,37 @@
 
 package com.tutorial;
 
-public class LoginBean
+import java.io.Serializable;
+
+import javax.annotation.PostConstruct;
+
+public class LoginBean 
 {
-    private String name;
+    /**
+	 * 
+	 */
+	
+	private String name;
     private String password;
 
+    
+    
+    
 
-    public String getName ()
+    public LoginBean() {
+		super();
+		
+		
+    
+    }
+
+    @PostConstruct
+    public void init(){
+    ConnectDB.connect();
+    }
+    
+    
+	public String getName ()
     {
         return name;
     }
@@ -36,4 +60,21 @@ public class LoginBean
         
         
     }
+    
+    
+    
+   
+    
+    
 }
+
+
+
+
+
+
+
+
+
+
+
